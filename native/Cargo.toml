@@ -1,0 +1,17 @@
+[package]
+name = "grace"
+version = "0.1.0"
+authors = ["yoonhoGo <rhdbsgh0629@naver.com>"]
+license = "MIT"
+build = "build.rs"
+exclude = ["artifacts.json", "index.node"]
+
+[lib]
+name = "grace"
+crate-type = ["cdylib"]
+
+[build-dependencies]
+neon-build = "0.3.3"
+
+[dependencies]
+neon = "0.3.3"
